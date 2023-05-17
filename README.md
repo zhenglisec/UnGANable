@@ -1,6 +1,6 @@
 # UnGANable
 # Multi-Exit-Privacy
-This repository contains the implementation for [UnGANable: Defending Against GAN-based Face Manipulation](https://arxiv.org/abs/2210.00957) (USENIX Security 2023)
+This repository contains the implementation for UnGANable: Defending Against GAN-based Face Manipulation (USENIX Security 2023)
 
 ## Citation
 ```bibtex
