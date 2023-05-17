@@ -1,0 +1,9 @@
+"""
+Module providing poisoning attacks under a common interface.
+"""
+from art1.attacks.poisoning.backdoor_attack import PoisoningAttackBackdoor
+from art1.attacks.poisoning.poisoning_attack_svm import PoisoningAttackSVM
+from art1.attacks.poisoning.feature_collision_attack import FeatureCollisionAttack
+from art1.attacks.poisoning.adversarial_embedding_attack import PoisoningAttackAdversarialEmbedding
+from art1.attacks.poisoning.clean_label_backdoor_attack import PoisoningAttackCleanLabelBackdoor
+from art1.attacks.poisoning.bullseye_polytope_attack import BullseyePolytopeAttackPyTorch

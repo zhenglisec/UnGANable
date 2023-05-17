@@ -1,0 +1,17 @@
+"""
+Classifier API for abstracting classification models for testing purposes. Soon to be replaced by Estimator API.
+Use `art1.estimators.classification instead.
+"""
+from art1.estimators.classification.scikitlearn import SklearnClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnDecisionTreeClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnDecisionTreeRegressor
+from art1.estimators.classification.scikitlearn import ScikitlearnExtraTreeClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnAdaBoostClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnBaggingClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnExtraTreesClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnGradientBoostingClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnRandomForestClassifier
+from art1.estimators.classification.scikitlearn import ScikitlearnLogisticRegression
+from art1.estimators.classification.scikitlearn import ScikitlearnSVC
+from art1.estimators.classification.scikitlearn import ScikitlearnLinearSVC
