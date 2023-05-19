@@ -12,7 +12,7 @@ from .lpips import PerceptualLoss
 from models.configs import CONFIG, set_seed
 # from torchvision.models import vgg16
 import inversion.lpips as util
-
+ 
 def style_loss(net, img0, img1):
     out0, out1 = net(img0), net(img1)
     feats0, feats1= util.normalize_tensor(out0), util.normalize_tensor(out1)
@@ -88,7 +88,6 @@ class OptimInversion():
 
         results = {'IMGS': IMGS, 'CODES': CODES}
         np.save(save_path + '_opt_rec.npy', results)
-
     def get_lr(self, t, initial_lr, rampdown=0.25, rampup=0.05):
         lr_ramp = min(1, (1 - t) / rampdown)
         lr_ramp = 0.5 - 0.5 * math.cos(lr_ramp * math.pi)
